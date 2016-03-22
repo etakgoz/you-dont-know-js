@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>You don't know JS - Async</title>
+  </head>
+  <body>
+
+    <script>
+
+    function now() {
+      return 21;
+    }
+
+    function later() {
+      answer = answer * 2;
+      console.log( "Meaning of life:", answer );
+    }
+    var answer = now();
+
+    later();
+
+    setTimeout( later, 1000 );
+
+    </script>
+
+  </body>
+</html>
